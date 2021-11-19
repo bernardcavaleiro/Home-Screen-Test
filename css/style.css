@@ -16,20 +16,121 @@ html,body{
 
 .clear{clear: both;}
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 header{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
+    padding-top: 15px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 15px;
 }
 
 .logo h1{
-    font-size: 50px;
+    font-size: 60px;
     color: white;
-    background-color: blue;
+    text-shadow: 2px 2px black;
 }
 
-header nav ul{
+header ul{
     display: flex;
-    
+    justify-content:space-around;
+    color: white;
+    font-size: 20px;
+}
+   
+header li{
+    flex-grow: 1;
+    font-size: 20px;
+    padding-right: 30px;
+    list-style-type: none;
+}
+
+nav a{
+    font-size: 25px;
+    width: 100%;
+    list-style-type: none; 
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+}
+
+main{
+    width: 84%;
+    height: 180px;
+    background-color:white;
+    margin: 100px auto;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px -50px 36px -28px inset;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.main-icons{
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+    padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.section-box-right{
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.section-box-left{
+   
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.section-box-right h1,.section-box-left h1{
+    text-align: center;
+    padding: 20px;
+}
+
+.section-box-right p,.section-box-left p{
+    text-align: center;
+
 }
